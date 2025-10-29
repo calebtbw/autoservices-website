@@ -1,0 +1,787 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+ ========================================================================== */
+
+/**
+* Remove the margin in all browsers.
+*/
+
+body {
+  margin: 0;
+}
+
+/**
+* Render the `main` element consistently in IE.
+*/
+
+main {
+  display: block;
+}
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+ ========================================================================== */
+
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+ ========================================================================== */
+
+/**
+* Remove the gray background on active links in IE 10.
+*/
+
+a {
+  background-color: transparent;
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+* Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+ ========================================================================== */
+
+/**
+* Remove the border on images inside links in IE 10.
+*/
+
+img {
+  border-style: none;
+}
+
+/* Forms
+ ========================================================================== */
+
+/**
+* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+*/
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+* Correct the padding in Firefox.
+*/
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+
+textarea {
+  overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+ ========================================================================== */
+
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+
+details {
+  display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+ ========================================================================== */
+
+/**
+* Add the correct display in IE 10+.
+*/
+
+template {
+  display: none;
+}
+
+/**
+* Add the correct display in IE 10.
+*/
+
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+Author's custom styles
+========================================================================== */
+
+body {
+  background-color: #d1dbe0; /* Soft gray background to reduce stark white */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+  min-height: 100px; /* Fixed height for the navbar */
+  max-height: 100px; /* Ensure navbar doesn't grow */
+  padding-top: 0; /* Remove default padding to control height */
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  padding: 0; /* Remove default padding to control logo spacing */
+  line-height: 100px; /* Align vertically with new navbar height */
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center; /* Vertically center the nav links with the logo */
+  height: 100px; /* Match new navbar height */
+}
+
+/* Styles for the hamburger menu on smaller devices (below 1200px) */
+@media (max-width: 1199.98px) {
+  .navbar-collapse {
+      background-color: #e6edf0; /* Light green background for dropdown */
+      height: auto; /* Allow height to expand for dropdown content */
+      padding: 10px 0; /* Add padding for better spacing */
+  }
+  .navbar-nav {
+      width: 100%; /* Ensure nav items take full width */
+  }
+  .nav-link {
+      line-height: normal; /* Reset line-height for dropdown items */
+      padding: 10px 15px !important; /* Adjust padding for dropdown items */
+  }
+}
+
+/* Ensure nav links are centered vertically on larger screens */
+@media (min-width: 1200px) {
+  .nav-link {
+      color: #333 !important;
+      padding: 0 15px !important; /* Adjust padding for spacing */
+      line-height: 100px; /* Align with navbar height */
+  }
+  .nav-link:hover {
+      color: #0d6efd !important;
+  }
+}
+
+.logo {
+  height: auto; /* Allow height to scale with width */
+  max-height: 130px; /* Match navbar height to prevent overflow */
+  width: auto;
+  max-width: 150px; /* Prevent logo from becoming too wide */
+  object-fit: contain; /* Scale logo proportionally */
+  vertical-align: middle; /* Center vertically */
+}
+
+.card {
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.service-card {
+  transition: background-color 0.3s ease;
+  height: 140px; /* Fixed height to ensure consistency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.service-card:hover {
+  background-color: #f8f9fa;
+}
+
+.service-card .card-body {
+  padding: 10px; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.service-icon-wrapper {
+  width: 100%;
+  height: 60px; /* Fixed height for the image container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px; /* Space between image and text */
+  overflow: hidden; /* Prevent image overflow */
+}
+
+.service-icon {
+  max-width: 80%; /* Take up to 80% of the card width */
+  max-height: 100%; /* Fit within the wrapper height */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Ensure image scales proportionally */
+}
+
+/* Adjust layout and sizes on smaller screens */
+@media (max-width: 767.98px) {
+  .service-card {
+      height: 120px; /* Smaller height on mobile */
+  }
+  .service-icon-wrapper {
+      height: 40px; /* Smaller image container on mobile */
+      margin-bottom: 6px;
+  }
+  .service-icon {
+      max-width: 70%; /* Slightly smaller on mobile */
+      max-height: 100%;
+  }
+  .service-card .card-body {
+      padding: 8px; /* Further reduce padding on mobile */
+  }
+  .card-text {
+      font-size: 0.9rem; /* Smaller text on mobile */
+  }
+}
+
+/* On very small screens, make cards full-width to give more space */
+@media (max-width: 575.98px) {
+  .service-card {
+      height: 100px; /* Even smaller height on very small screens */
+  }
+  .service-icon-wrapper {
+      height: 30px; /* Smaller image container */
+      margin-bottom: 4px;
+  }
+  .service-icon {
+      max-width: 60%; /* Further reduce image size */
+      max-height: 100%;
+  }
+  .card-text {
+      font-size: 0.85rem; /* Smaller text */
+  }
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  transform: scale(1.05);
+}
+
+.form-control, .form-select {
+  border-radius: 0.5rem;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #e6edf0 100%); /* Gradient background */
+  color: #fff; /* White text for contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for readability */
+}
+
+.hero-section h1,
+.hero-section p {
+  color: #fff; /* Ensure text is white */
+}
+
+/* Customer Reviews Section */
+.reviews-section {
+  background-color: #f1f5f8; /* Slightly darker than bg-light */
+  padding: 50px 0;
+}
+
+.review-card {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review-card .stars {
+  color: #f5c518; /* Gold color for stars */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.review-card .review-text {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.review-card .reviewer-name {
+  font-weight: 600;
+  color: #333;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, #e6edf0 0%, #d1dbe0 100%); /* Subtle gradient */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.cta-section h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333; /* Darker text for contrast */
+}
+
+.cta-section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #343a40; /* Darker gray for footer */
+  color: #fff;
+  padding: 50px 0 20px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-link {
+  color: #adb5bd; /* Light gray for links */
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-link:hover {
+  color: #0d6efd; /* Primary blue on hover */
+  text-decoration: underline;
+}
+
+.footer-section .border-top {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate__fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Service Box Styles */
+.service-box {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #0d6efd;
+}
+
+.service-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #6c757d;
+}
+
+/* FAQ Section Styles */
+.faq-section {
+  margin: 30px 0;
+}
+
+.faq-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.accordion-item {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0d6efd;
+  background-color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0d6efd;
+  background-color: #e7f1ff;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767.98px) {
+  .service-box {
+      padding: 15px;
+      margin: 20px 0;
+  }
+
+  .service-box h3 {
+      font-size: 1.25rem;
+  }
+
+  .service-box p {
+      font-size: 0.9rem;
+  }
+
+  .faq-section h2 {
+      font-size: 1.5rem;
+  }
+
+  .accordion-button {
+      font-size: 0.9rem;
+  }
+
+  .accordion-body {
+      font-size: 0.85rem;
+  }
+}
+
+.social-links a:hover {
+  color: #0d6efd !important; /* Bootstrap primary color on hover */
+  transition: color 0.3s ease;
+}
+
+/* Chatbox Widget */
+.chatbox-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbox-toggle {
+  background-color: #0d6efd;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.chatbox-toggle:hover {
+  background-color: #0b5ed7;
+}
+
+.chatbox-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.chatbox-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.chatbox-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.chatbox-link:hover {
+  color: #0d6efd;
+}
+
+.chatbox-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}

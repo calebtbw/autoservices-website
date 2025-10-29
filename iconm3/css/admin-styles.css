@@ -1,0 +1,220 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #0d6efd;
+}
+
+.nav-link, .navbar-brand {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #e6f4fa !important;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Error Messages */
+.alert {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Accounting Section */
+#accounting .card {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+#accounting p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.report-btn {
+    transition: background-color 0.3s ease;
+}
+
+.report-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Filter Forms */
+.card-body form {
+    padding: 10px 0;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
+
+.btn-success {
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+.pagination .page-link {
+    color: #0d6efd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+
+/* Mobile-friendly adjustments */
+/* Ensure tables are scrollable horizontally on small screens */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.table {
+    min-width: 700px; /* Ensure tables have a minimum width for content */
+}
+
+/* Stack form elements vertically on small screens */
+@media (max-width: 767.98px) {
+    .row.g-3 {
+        flex-direction: column;
+    }
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-12 {
+        width: 100%;
+        margin-bottom: 15px; /* Add spacing between stacked elements */
+    }
+    .form-label.d-block {
+        margin-bottom: 0; /* Reset margin for labels used as spacers */
+    }
+    .btn {
+        width: 100%; /* Full-width buttons for easier tapping */
+        padding: 10px; /* Larger tap area */
+        font-size: 16px; /* Larger text for readability */
+    }
+    .report-btn {
+        font-size: 16px; /* Consistent font size for report buttons */
+    }
+}
+
+/* Adjust table cells for better readability on mobile */
+@media (max-width: 767.98px) {
+    .table th, .table td {
+        font-size: 14px; /* Slightly smaller text for better fit */
+        padding: 8px; /* Adjust padding for better spacing */
+    }
+    .table .form-control {
+        font-size: 14px; /* Match input sizes */
+    }
+    .table .btn-sm {
+        font-size: 12px; /* Smaller buttons in tables */
+        padding: 5px 10px; /* Adjust button padding */
+    }
+}
+
+/* Improve navbar for mobile */
+@media (max-width: 767.98px) {
+    .navbar-nav .nav-link {
+        padding: 10px 15px; /* Larger tap area for navbar links */
+        font-size: 16px; /* Larger text for readability */
+    }
+    .navbar-brand {
+        font-size: 18px; /* Slightly larger brand text */
+    }
+}
+
+/* Adjust pagination for mobile */
+@media (max-width: 767.98px) {
+    .pagination {
+        flex-wrap: wrap; /* Allow pagination to wrap on small screens */
+        justify-content: center; /* Center pagination items */
+    }
+    .page-item .page-link {
+        padding: 8px 12px; /* Larger tap area */
+        font-size: 14px; /* Readable text */
+    }
+}
+
+/* General spacing and readability */
+@media (max-width: 767.98px) {
+    h2.fw-bold {
+        font-size: 24px; /* Slightly smaller headings */
+    }
+    h4 {
+        font-size: 18px; /* Smaller subheadings */
+    }
+    .container {
+        padding: 15px; /* Adjust container padding */
+    }
+    .card-body {
+        padding: 15px; /* Adjust card padding */
+    }
+    footer {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e6f4fa;
+    text-decoration: underline;
+}
